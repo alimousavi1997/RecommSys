@@ -3,18 +3,21 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 
-\title{Problem Statement and Goals\\\progname}
-
-\author{\authname}
+\title{Problem Statement and Goals \\ Recommender System}
+\author{Team 10 \\ Seyed Ali Mousavi}
 
 \date{}
 
-\input{../Comments}
-\input{../Common}
+
+
+% \input{../Comments}
+% \input{../Common}
 
 \begin{document}
 
 \maketitle
+
+
 
 \begin{table}[hp]
 \caption{Revision History} \label{TblRevisionHistory}
@@ -22,35 +25,60 @@
 \toprule
 \textbf{Date} & \textbf{Developer(s)} & \textbf{Change}\\
 \midrule
-Date1 & Name(s) & Description of changes\\
-Date2 & Name(s) & Description of changes\\
-... & ... & ...\\
+2024-01-20 & Seyed Ali Mousavi & First Draft\\
+% Date2 & Name(s) & Description of changes\\
+% ... & ... & ...\\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \section{Problem Statement}
 
-\wss{You should check your problem statement with the
-\href{https://github.com/smiths/capTemplate/blob/main/docs/Checklists/ProbState-Checklist.pdf}
-{problem statement checklist}.}
-\wss{You can change the section headings, as long as you include the required information.}
+% \wss{You should check your problem statement with the
+% \href{https://github.com/smiths/capTemplate/blob/main/docs/Checklists/ProbState-Checklist.pdf}
+% {problem statement checklist}.}
+
+% \wss{You can change the section headings, as long as you include the required information.}
+Most internet products we use today are powered by recommender systems. YouTube, Netflix, Amazon, Pinterest, and a long list of other internet products all rely on recommender systems to filter millions of contents and make personalized recommendations to their users. Everyone can make his recommender system. It only takes some basic machine-learning techniques and implementations in Python. In this project, we will start from scratch and walk through the process of how to prototype a minimum-viable movie recommender using the KNN(K-nearest neighbor) algorithm.
+
 
 \subsection{Problem}
 
+When KNN makes inference about a movie, it will calculate the “distance” between the target movie and every other movie in its database, then it ranks its distances and returns the top K nearest neighbor movies as the most similar movie recommendations.
+
+
+
+
 \subsection{Inputs and Outputs}
 
-\wss{Characterize the problem in terms of ``high level'' inputs and outputs.  
-Use abstraction so that you can avoid details.}
+To build a movie recommender, I choose MovieLens Datasets. It contains 27,753,444 ratings and 1,108,997 tag applications across 58,098 movies. These data were created by 283,228 users between January 09, 1995 and September 26, 2018. The ratings are on a scale from 1 to 5.
+Following the training of my model with this data using KNN, the input would be a specific individual, and the output would consist of optimal movie recommendations
+
+% \wss{Characterize the problem in terms of ``high level'' inputs and outputs.  
+% Use abstraction so that you can avoid details.}
 
 \subsection{Stakeholders}
+Everybody can use my project to use or develop. 
 
 \subsection{Environment}
 
-\wss{Hardware and software}
+% \wss{Hardware and software}
+Python
 
 \section{Goals}
 
+\begin{itemize}
+    
+    \item Building a content-based recommender system with the most possible accuracy
+    
+\end{itemize}
+
+
+
 \section{Stretch Goals}
+
+    \begin{itemize}
+        \item covering more approaches in recommender system: content-based, collaborative filtering, and hybrid.
+    \end{itemize}
 
 \end{document}
