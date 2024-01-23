@@ -1,10 +1,10 @@
 # Project Name
 
-Developer Names:
+Developer Names: Seyed Ali Mousavi
 
-Date of project start:
+Date of project start: 19 Jan 2024
 
-This project is ...
+This project is building a movie recommender
 
 The folders and files for this project are as follows:
 
