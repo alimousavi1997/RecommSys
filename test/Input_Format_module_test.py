@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import sys
 
-sys.path.append('C:\\Users\\seyed\\Desktop\\RecommSys\\src')
+sys.path.append('C:\\Users\\seyed\\Desktop\\RecommSys\\src') # Replace the path
 from modules import Input_Format  
 
 

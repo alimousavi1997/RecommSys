@@ -13,7 +13,7 @@ sys.path.append('C:\\Users\\seyed\\Desktop\\RecommSys\\src')
 from modules import Input_Format, MovieSelector
 
 # load raw ratings
-file_path = "user_item_test1.csv"  # Replace with your CSV file path
+file_path = "user_item_test1_1.csv"  # Replace with your CSV file path
 input_format = Input_Format(file_path)
 dataframe = input_format.load_csv_dataset()
 if dataframe is not None:
@@ -46,7 +46,7 @@ print('target_userId:',  target_userId, '\n',
 ################################################################
 #%% Tests For Functional Requirements: test 1.2 (One Popular Movie)
 # load raw ratings
-file_path = "user_item_test3.csv"  # Replace with your CSV file path
+file_path = "user_item_test1_2.csv"  # Replace with your CSV file path
 input_format = Input_Format(file_path)
 dataframe = input_format.load_csv_dataset()
 if dataframe is not None:
@@ -124,8 +124,8 @@ plt.legend()
 plt.gcf().set_size_inches(10, 3) 
 plt.show()
 
-print('RMSE:' , sklearn.metrics.mean_squared_error(original, test_euclidean), '\n'
-      'MAE:' , mean_absolute_error(original,test_euclidean))
+print('RMSE (Movie Recommender):' , sklearn.metrics.mean_squared_error(original, test_euclidean), '\n'
+      'MAE (Movie Recommender):' , mean_absolute_error(original,test_euclidean))
       
 random_list = []
 for i in range(50):
