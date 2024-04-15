@@ -59,7 +59,7 @@ df_user_movie = input_format.convert_dataset(dataframe=dataframe)
 
 # make recommendations
 movie_selector = MovieSelector(df_user_movie = df_user_movie, df_movies = df_movies, num_top_movies=1)
-target_userId = 8
+target_userId = 5
 Recommended_Movies = movie_selector.recommend_movies(target_userId = target_userId)
 
 print('target_userId:',  target_userId, '\n',

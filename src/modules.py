@@ -71,6 +71,10 @@ class KNN:
         # majority vote, most common class label
         most_common = Counter(k_nearest_labels).most_common(1)
         return most_common[0][0]
+    
+    def euclidean_distance(x1,x2):
+        return np.sqrt(np.sum((x1-x2)**2))
+
 
 
 

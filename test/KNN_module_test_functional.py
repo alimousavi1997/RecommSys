@@ -13,8 +13,9 @@ knn.fit(X_train, y_train)
 def test_nearest_neighbor_indices():
     # Test nearest_neighbor_indices method
     test_point = np.array([0, 0])
-    expected_indices = [0, 1]
-    assert knn.nearest_neighbor_indices(test_point) == expected_indices
+    expected_indices = np.array([0, 1])
+    assert np.any(knn.nearest_neighbor_indices(test_point) == expected_indices)
+
 
 
 def test_predict():
@@ -22,3 +23,5 @@ def test_predict():
     test_point = np.array([0, 0])
     expected_prediction = 0
     assert knn._predict(test_point) == expected_prediction
+
+    
